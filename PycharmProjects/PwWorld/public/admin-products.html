@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Products - PW World</title>
+    <link rel="stylesheet" href="/styles/admin.css">
+</head>
+<body>
+<video autoplay muted loop id="bgVideo">
+    <source src="/videos/workingOut.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/admin/upload">Bulk Upload</a></li>
+            <li><a href="/admin/products">Products</a></li>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="admin-content">
+    <h1>Product Listing</h1>
+    <input type="text" id="search-input" placeholder="Search products…" />
+    <button id="search-button">Search</button>
+    <div id="product-list" class="product-list">
+        <!-- Product items dynamically loaded here -->
+    </div>
+    <button id="add-new-product">Add New Product</button>
+</div>
+<script src="/scripts/admin-products.js" defer></script>
+</body>
+</html>
+
+

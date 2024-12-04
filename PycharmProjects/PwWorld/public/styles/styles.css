@@ -1,0 +1,238 @@
+/* General Body Styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Background video */
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background-size: cover;
+}
+
+/* Sticky header */
+header {
+    background-color: black;
+    color: white;
+    padding: 25px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 10px;
+}
+
+header nav ul li {
+    padding: 0 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+
+/* Splash section */
+.splash {
+    position: relative;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    color: white;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.splash h1, .splash p {
+    margin: 20px 0;
+}
+
+
+.splash button {
+    margin-top: 20px;
+}
+
+/* Search section */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 115px 0;
+}
+
+.search input[type="text"], .search button {
+    padding: 15px 20px;
+    font-size: 1.2em;
+}
+
+.search input[type="text"] {
+    flex-grow: 1;
+    max-width: 70%;
+    margin-right: 10px;
+}
+
+.search button {
+    flex-shrink: 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Main content */
+.content {
+    padding-top: 60px;
+    color: #333;
+    position: relative;
+    z-index: 100;
+}
+
+/* Sidebar for filters */
+aside.filters {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: calc(100% - 60px);
+}
+
+aside.filters h3 {
+    margin-top: 0;
+}
+
+aside.filters button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* Styling for product page images */
+.products {
+    margin-left: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.product {
+    width: calc(33.333% - 40px);
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 80%;
+    height: auto;
+    max-height: 130px;
+    object-fit: contain;
+}
+
+/* Styling for images in product details */
+.product-details img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    padding-top: 40px;
+}
+
+/* Styling for images in the cart */
+.cart-item img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    padding-top: 80px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    aside.filters {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .products {
+        margin-left: 0;
+    }
+
+    .product {
+        width: calc(50% - 20px); /* Adjust the width as needed */
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    aside.filters {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .products {
+        margin-left: 0;
+    }
+
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+
+
+
+
+

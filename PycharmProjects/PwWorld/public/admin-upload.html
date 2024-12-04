@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Upload Products - PW World</title>
+    <link rel="stylesheet" href="/styles/admin.css">
+</head>
+<body>
+<video autoplay muted loop id="bgVideo">
+    <source src="/videos/workingOut.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/admin/products">Products</a></li>
+            <li><a href="/admin/upload">Bulk Upload</a></li>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="admin-content">
+    <h1>Bulk Upload Products</h1>
+    <p>Upload a file with product data. Acceptable formats: JSON, CSV, TXT.</p>
+    <p>Example format:</p>
+    <pre>
+{
+    "name": "Product Name",
+    "description": "Description",
+    "image_url": "images/imageName.jpg",
+    "price": 19.99,
+    "category_id": "1",
+    "is_featured": 0,
+    "protein": 30.0,
+    "caffeine": 200.0,
+    "electrolytes": 100.0
+}
+    </pre>
+    <form id="upload-form" enctype="multipart/form-data" method="POST" action="/api/admin/bulk-upload">
+        <input type="file" id="file-input" name="file" accept=".json,.csv,.txt">
+        <button type="submit">Upload File</button>
+    </form>
+
+</div>
+<script src="/scripts/admin-upload.js" defer></script>
+</body>
+</html>
+
+

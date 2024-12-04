@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoostCharge Products</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/signin">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+<aside class="filters">
+    <h3>Sort By:</h3>
+    <button id="sort-price-asc">Price Low to High</button>
+    <button id="sort-price-desc">Price High to Low</button>
+    <button id="sort-caffeine">Highest Caffeine</button>
+    <button id="sort-protein">Highest Protein</button>
+    <button id="sort-electrolytes">Highest Electrolytes</button>
+    <label for="category-dropdown">Filter by Category:</label>
+    <select id="category-dropdown">
+        <option value="all">All Categories</option>
+        <option value="1">Preworkout</option>
+        <option value="2">Protein Powder</option>
+        <option value="3">Energy Drinks</option>
+    </select>
+</aside>
+<div class="products">
+    <!-- Products dynamically loaded here -->
+</div>
+<footer>
+    <p>&copy; 2024 PW World. All rights reserved.</p>
+    <p>Follow us on <a href="#">Social Media</a></p>
+</footer>
+
+<script src="scripts/products.js" defer></script>
+</body>
+</html>
+
+
